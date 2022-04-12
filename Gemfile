@@ -16,6 +16,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :rub
 gem 'mini_racer'
 
+gem 'devise'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -38,6 +40,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
 end
+
+gem 'simplecov', require: false, group: :test
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -66,7 +70,6 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'simplecov', require: false, group: :test
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
